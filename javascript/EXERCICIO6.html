@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var  time1, time2, gol1, gol2,resultado;
+        time1 = prompt("qual seu time?","");
+        gol1 = prompt("quantos gols fez ?","");
+        time2 = prompt("qual seu time?","");
+        gol2 = prompt("quantos gols fez ?","");
+
+        if(gol1 > gol2){
+           resultado = "vitoria históricaaaa!!!! "+ time1;
+
+        }else if(gol2>gol1){
+            resultado="vitoria históricaaaaaa!!!! "+time2;
+
+        }else{
+            resultado = "Empate";
+        }
+        
+        document.write(time1+" "+gol1+"  "+" "+" X "+gol2+ " "+ time2+"</br>");
+        document.write(resultado);
+
+        
+    </script>
+</body>
+</html>

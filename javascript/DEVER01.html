@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome, nota1, nota2, media, situacao;
+        nome = prompt("qual o nome do aluno?","");
+        nota1 = prompt("Digite a primeira nota:","");
+        nota2 = prompt("Digite a segunda nota:","");
+
+        media = (parseInt(nota1) + parseInt(nota2))/2;
+
+        if(media > 6.5){
+            situacao = "aprovado";
+
+        } else {
+            situacao = "reprovado";
+
+        }
+        document.write(nome + "</BR>");
+        document.write("Média:" + media + "</BR>");
+        document.write(situacao);
+    </script>
+</body>
+</html>
