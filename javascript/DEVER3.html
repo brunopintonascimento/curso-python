@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVER3</title>
+</head>
+<body>
+    <script>
+        function calcularMedia(nota1, nota2) {
+    return (nota1 + nota2) / 2;
+}
+
+function calcularMedia(nota1, nota2) {
+    return (nota1 + nota2) / 2;
+}
+
+function verificarAprovacao(media) {
+    if (media >= 6.5) {
+        return "Aprovado";
+    } else {
+        return "Reprovado";
+    }
+}
+
+function solicitarNota(nota) {
+    var nomeAluno = prompt("Digite o nome do aluno:");
+    var nota1 = parseFloat(prompt("Digite a primeira nota:"));
+    var nota2 = parseFloat(prompt("Digite a segunda nota:"));
+
+    while(isNaN(nota1) || !Number.isInteger(Number(nota1)) && !Number.isInteger(isNaN(nota2)))  {
+        document.write("Por favor, insira notas válidas.");
+        return (nota);
+
+    }
+}
+    nota1=solicitarNota(nota1);
+    nota2=solicitarNota(nota2);
+
+    var media = calcularMedia(nota1, nota2);
+    var situacao = verificarAprovacao(media);
+
+    document.write("A média do aluno " + nomeAluno + " é " + media.toFixed(2));
+    document.write("O aluno está " + situacao);
+
+
+
+
+    </script>
+</body>
+</html>
