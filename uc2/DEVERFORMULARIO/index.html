@@ -11,10 +11,13 @@
     <p><font size="100" color="red">Formulário</font></p>
     <form action="./confirme.html" method="post">
         <fieldset>
-            <table border="1">
-                <th><img src="./imagens/1708699664814.jpg" alt=""width="100" height="100"></th><br>
-
-            </table>
+            <h2>Upload de foto perfil</h2>
+            
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <input type="file" name="file" class="file-input" required>
+                    
+                </form><br>
+            
             <legend>Dados Pessoais</legend>
             Nome: <br>
             <input type="text" placeholder="digite nome" name="nome" required><br>
@@ -64,11 +67,17 @@
             <option value="4">Bahia</option>
     
         </select><br><br>
+        <h2>Upload de Curriculo</h2>
+            
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" class="file-input" required>
+            
+        </form><br>
         <legend>Fale um pouco sobre você.</legend><br>
         <textarea rows="10" cols="40">
             Digite aqui...
         </textarea><br>
-        <input type="submit"value="Enviar">
+        <button type="submit" class="submit-btn"> Enviar  </button><br><br>
         <button type="button">cancelar</button>
         </fieldset><br>
         
