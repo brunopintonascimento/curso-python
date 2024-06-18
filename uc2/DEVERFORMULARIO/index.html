@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dever formulario</title>
+</head>
+
+<body>
+    <p><font size="100" color="red">Formulário</font></p>
+    <form action="./confirme.html" method="post">
+        <fieldset>
+            <table border="1">
+                <th><img src="./imagens/1708699664814.jpg" alt=""width="100" height="100"></th><br>
+
+            </table>
+            <legend>Dados Pessoais</legend>
+            Nome: <br>
+            <input type="text" placeholder="digite nome" name="nome" required><br>
+            sobrenome:<br>
+
+            <input type="text" placeholder="digite sobrenome" name="sobrenome"><br>
+            RG: <br>
+            <input type="text" placeholder="RG" name="RG"><br>
+            CPF: <br>
+            <input type="text" placeholder="cpf" name="CPF"><br>
+            CEL: <br>
+            <input type="text" placeholder="cel" name="CEL"><br>
+            CEP: <br>
+            <input type="text" placeholder="cep" name="CEP"><br>
+            END: <br>
+            <input type="text" placeholder="end" name="END"><br>
+        </form><br><hr>
+        <form>
+            <div>
+              <label for="diaa">Informe a data do seu aniversário:</label>
+              <input type="date" id="diaa" name="diaa" />
+            </div>
+          </form><br>
+          
+
+        <legend>Qual seu sexo?</legend>
+        <form>
+            <input type="radio" name="genero" value="masculino">masculino<br>
+            <input type="radio" name="genero" value="feminino">feminino<br>
+            <input type="radio" name="genero" value="outro">outro<br>
+        </form>
+    
+        </form><br>
+        <legend>Fala qual idioma?</legend>
+        <form>
+            <input type="checkbox" name="tipo1" value="ingles">Inglês<br>
+            <input type="checkbox" name="tipo2" value="frances">francês<br>
+            <input type="checkbox" name="tipo3" value="portugues">portugues<br>
+    
+        </form><br>
+        <legend>Qual estado mora?</legend>
+        <select name="estado">
+            <option value="0"></option>
+            <option value="1">Rio de janeiro</option>
+            <option value="2">São Paulo</option>
+            <option value="3">Minas Gerais</option>
+            <option value="4">Bahia</option>
+    
+        </select><br><br>
+        <legend>Fale um pouco sobre você.</legend><br>
+        <textarea rows="10" cols="40">
+            Digite aqui...
+        </textarea><br>
+        <input type="submit"value="Enviar">
+        <button type="button">cancelar</button>
+        </fieldset><br>
+        
+       
+   
+
+</body>
+
+</html>
