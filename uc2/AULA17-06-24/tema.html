@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios de Cursos</title>
+</head>
+
+<body>
+    <p><font size="100" color="red">&copy;Vitória Frustada! 
+        &amp;&euro;</font></p>
+    <form action="./confirme.html" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            Nome: <br>
+            <input type="text" placeholder="digite nome" name="nome" required><br>
+            sobrenome:<br>
+
+            <input type="text" placeholder="digite sobrenome" name="sobrenome"><br>
+            senha: <br>
+            <input type="text" placeholder="digite senha" name="senha"><br>
+        </fieldset><br>
+        <button type="button">cancelar</button>
+        <input type="submit"value="Enviar"><br><br>
+
+        <input type="radio" name="op01" value="opcao01">exemplo 01<br>
+        <input type="radio" name="op01" value="opcao02">exemplo 02<br>
+
+
+    </form><br>
+    <form>
+        <input type="radio" name="genero" value="masculino">masculino<br>
+        <input type="radio" name="genero" value="feminino">feminino<br>
+        <input type="radio" name="genero" value="outro">outro<br>
+    </form>
+
+    </form><br>
+    <form>
+        <input type="checkbox" name="tipo1" value="ingles">Inglês<br>
+        <input type="checkbox" name="tipo2" value="frances">francês<br>
+        <input type="checkbox" name="tipo3" value="portugues">portugues<br>
+
+    </form><br>
+    <select name="times">
+        <option value="0">selecione</option>
+        <option value="1">Flamengo</option>
+        <option value="2">fluminense</option>
+        <option value="3">vasco</option>
+        <option value="4">botafogo</option>
+    </select><br><br>
+
+    <form action="./dados.html">
+        <label for="fname">Nome:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Sobrenome:</label><br>
+        <input type="text" id="lname" name="lname" value=""><br><br>
+        <input type="submit" value="Enviar">
+    </form><br><br>
+
+    <textarea rows="10" cols="40">
+        Digite aqui...
+    </textarea>
+
+
+</body>
+
+</html>
