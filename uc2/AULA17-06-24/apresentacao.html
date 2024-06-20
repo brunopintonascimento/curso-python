@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apresentacao da tag div</DIv>
+    </title>
+    <script>
+        function emetirMensagem() {
+
+
+            document.write("<h1>oi, tudo ok</h1>");
+
+        }
+        function emitirAlerta() {
+            alert("tecla digitada");
+        }
+        function emitirAlerta2(event) {
+            alert("tecla digitada " + event.key);
+        }
+    </script>
+    <style>
+        p {
+            margin-top: 20px;
+            margin-left: 50px;
+            text-align: center;
+            color: blueviolet;
+            font-size: 50px;
+        }
+
+        h1,
+        h2 {
+            color: brown;
+            text-align: center;
+        }
+
+        #descricao { 
+            background-color: aquamarine;
+        }
+
+        .exemplo {
+
+            font-size: 30px;
+
+            color: blue;
+            text-align: center;
+
+        }
+
+        .botao { text-align: center;
+
+        }
+        
+    </style>
+</head>
+
+<body style="background-color: bisque;">
+    <p>Exemplo de html</p>
+    <h1>Exemplo de html</h1>
+    <h2>sub titulo</h2><br>
+
+    <h3 class="exemplo">exemplo de estilo de classe </h3>
+    <h4 class="exemplo">mais um exemplo estilo de classe</h4>
+    <div>
+        <p>Exemplo de html</p>
+    </div>
+    <div id="descricao" name="descricao">
+        <p>Exemplo de html</p>
+    </div>
+    <div class= "botao" >
+    <button id="botaoAqui" onclick="emetirMensagem();">clique
+        aqui</button><br><br><!--onclick emiti mensagem em outra pagina-->
+    <input type="text" onkeypress="emitirAlerta();" id="exemplo" name="exemplo"
+        placeholder="digite aqui"><br><!--onkeypress emite alerta ao digitar-->
+    <input type="text" onkeypress="emitirAlerta2(event);" id="exemplo" name="exemplo"
+        placeholder="digite aqui"><!--onkeypress event emite alerta ao digitar especificando qual erro-->
+    </div>
+
+
+
+
+</body>
+
+</html>

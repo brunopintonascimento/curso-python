@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dever formulario</title>
+    <script>
+        function emetirMensagem(){
+        alert("enviado com sucesso!!");
+    }
+    </script>
 </head>
 
 <body>
@@ -77,7 +82,8 @@
         <textarea rows="10" cols="40">
             Digite aqui...
         </textarea><br>
-        <button type="submit" class="submit-btn"> Enviar  </button><br><br>
+        <button id="botaoEnviar" onclick="emetirMensagem()"> Enviar  </button><br>
+        <input type="reset" value="limpar"><!--Botão que limpa o texto-->
         <button type="button">cancelar</button>
         </fieldset><br>
         
