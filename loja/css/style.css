@@ -1,0 +1,27 @@
+#barraTitulo {
+    background-color: aquamarine;
+    height: 70px;
+}
+
+#conteudo {
+  
+    background-color: yellow;
+    height: 702px;
+    text-align: center;
+    
+
+
+
+}
+
+#rodape {
+    background-color: blueviolet;
+    height: 70px;
+
+
+}
+#secao{
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+}
